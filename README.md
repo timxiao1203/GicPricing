@@ -4,7 +4,7 @@ Guaranteed investment certificate (GIC) is a financial instrument that offers a 
 
 To determine the rate of return, the percentage change in each index level from the initial level is calculated.  Here the initial level is set two days after purchase, while the final level is set to the arithmetic average of the last 11 month-ending index levels and the level one day prior to maturity.  
 
-The rate of return is then given by a weighted sum of the GIC rate and the percentage change in each index level described above, but bounded below by a minimum guaranteed interest rate.  At maturity, the GIC holder receives the invested principal plus the principal times this rate of return.  
+The rate of return is then given by a weighted sum of the GIC rate and the percentage change in each index level described above, but bounded below by a minimum guaranteed interest rate. Interest coupon rate can be computed as https://finpricing.com/lib/FiBondCoupon.html). At maturity, the GIC holder receives the invested principal plus the principal times this rate of return.  
 
 The payoff at maturity from a GIC can be shown equal to the invested principal plus these principal times the sum of the minimum guaranteed interest rate and the payoff from a European call option on the arithmetic average of a basket price at the 12 points above, where the basket price is given by a weighted sum of the index levels above.  
 
@@ -25,8 +25,6 @@ The GIC specification includes
 •	a participation rate, which is the percentage of the net return on the index components.
 
 References:
-
-https://finpricing.com/lib/EqVariance.html
 
 https://osf.io/tgd82/download
 
